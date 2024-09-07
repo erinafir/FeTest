@@ -10,6 +10,7 @@ export function TabsTopUp() {
     const [isDropdownOpen, setIsDropdownOpen] = react.useState(false)
 
     return (
+        <section className="p-4 bg-white rounded-sm sm:px-16">
         <Tabs aria-label="Tabs with underline" variant="underline">
             <Tabs.Item active title="Pulsa" >
                 <div className="flex flex-col gap-2 sm:flex-row">
@@ -17,7 +18,7 @@ export function TabsTopUp() {
                     <button
                         id="dropdownDefaultButton"
                         data-dropdown-toggle="dropdown"
-                        className="w-full text-white justify-between font-medium rounded-md text-sm px-2 py-2.5 text-center inline-flex items-center"
+                        className="w-full text-white justify-between font-medium rounded-md text-sm px-2 py-2.5 text-center inline-flex items-center relative"
                         type="button"
                         style={{ width: '100%', height: 44, borderWidth: 1, borderColor: "#AFB1B6" }}
                         onClick={() => setIsDropdownOpen((prev) => !prev)}
@@ -30,7 +31,7 @@ export function TabsTopUp() {
 
                     </button>
 
-                    {isDropdownOpen && (<div className="absolute top-[665px] right-[121px] rounded-md mt-2 " style={{ width: 357, maxWidth: 735, backgroundColor: "white", borderWidth: 1, borderColor: "#AFB1B6" }}>
+                    {isDropdownOpen && (<div className="absolute top-[700px] right-[185px] rounded-md mt-2 " style={{ width: 445, maxWidth: 735, backgroundColor: "white", borderWidth: 1, borderColor: "#AFB1B6" }}>
                         <div className="px-4 py-2 flex flex-col">
                             <button className="focus:border-l-4 focus:border-cyan-600"><p className="py-1 text-sm">10.000</p></button>
                             <button className="focus:border-l-4 focus:border-cyan-600"><p className="py-1 text-sm">20.000</p></button>
@@ -57,7 +58,7 @@ export function TabsTopUp() {
                     <button
                         id="dropdownDefaultButton"
                         data-dropdown-toggle="dropdown"
-                        className="w-full text-white justify-between font-medium rounded-md text-sm px-2 py-2.5 text-center inline-flex items-center"
+                        className="w-full text-white justify-between font-medium rounded-md text-sm px-2 py-2.5 text-center inline-flex items-center relative"
                         type="button"
                         style={{ width: '100%', height: 44, borderWidth: 1, borderColor: "#AFB1B6" }}
                         onClick={() => setIsDropdownOpen((prev) => !prev)}
@@ -70,7 +71,7 @@ export function TabsTopUp() {
 
                     </button>
 
-                    {isDropdownOpen && (<div className="absolute top-[665px] right-[121px] rounded-md mt-2 " style={{ width: 357, maxWidth: 735, backgroundColor: "white", borderWidth: 1, borderColor: "#AFB1B6" }}>
+                    {isDropdownOpen && (<div className="absolute top-[700px] right-[185px] rounded-md mt-2 " style={{ width: 445, maxWidth: 735, backgroundColor: "white", borderWidth: 1, borderColor: "#AFB1B6" }}>
                         <div className="px-4 py-2 flex flex-col">
                             <button className="focus:border-l-4 focus:border-cyan-600"><p className="py-1 text-sm">Paket Seminggu - 20.000</p></button>
                             <button className="focus:border-l-4 focus:border-cyan-600"><p className="py-1 text-sm">Paket Bulanan - 50.000</p></button>
@@ -101,5 +102,6 @@ export function TabsTopUp() {
 
             </Tabs.Item>
         </Tabs>
+        </section>
     );
 }

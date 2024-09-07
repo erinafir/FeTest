@@ -14,7 +14,7 @@ import Medicine from "../../public/assets/illusts/Medicine.png"
 
 export default function CategoryGrid6() {
     return (
-        <div className="hidden sm:grid sm:grid-cols-6">
+        <div className="hidden sm:grid sm:grid-cols-6 md:px-[150px] sm:bg-white sm:rounded-sm">
             <div className="grid content-center border-b-2 border-r-2" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={Tas} alt="..." />
                 <h6 className="text-wrap text-center">Tas</h6>
