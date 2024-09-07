@@ -14,7 +14,7 @@ import Medicine from "../../public/assets/illusts/Medicine.png"
 
 export default function CategoryGrid6() {
     return (
-        <div className="hidden sm:grid sm:grid-cols-6 md:px-[150px] sm:bg-white sm:rounded-sm">
+        <div className="hidden sm:grid sm:grid-cols-6 lg:px-[60px] xl:px-[290px] 2xl:px-[500px] sm:bg-white sm:rounded-sm">
             <div className="grid content-center border-b-2 border-r-2" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={Tas} alt="..." />
                 <h6 className="text-wrap text-center">Tas</h6>
@@ -39,27 +39,27 @@ export default function CategoryGrid6() {
                 <Image className="justify-self-center" src={Hobby} alt="..." />
                 <h6 className="text-wrap text-center">Hobi</h6>
             </div>
-            <div className="grid content-center border-b-2 border-r-2" style={{ width: 130, height: 160 }}>
+            <div className="grid content-center border-r-2" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={FnB} alt="..." />
                 <h6 className="text-wrap text-center">Makanan dan Minuman</h6>
             </div>
-            <div className="grid content-center border-b-2 border-r-2" style={{ width: 130, height: 160 }}>
+            <div className="grid content-center border-r-2" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={HomeAndLiving} alt="..." />
                 <h6 className="text-wrap text-center">Perlengkapan Rumah</h6>
             </div>
-            <div className="grid content-center border-b-2 border-r-2" style={{ width: 130, height: 160 }}>
+            <div className="grid content-center border-r-2" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={Laptop} alt="..." />
                 <h6 className="text-wrap text-center">Komputer dan Aksesoris</h6>
             </div>
-            <div className="grid content-center border-b-2 border-r-2" style={{ width: 130, height: 160 }}>
+            <div className="grid content-center border-r-2" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={Mom} alt="..." />
                 <h6 className="text-wrap text-center">Ibu dan Anak</h6>
             </div>
-            <div className="grid content-center border-b-2 border-r-2" style={{ width: 130, height: 160 }}>
+            <div className="grid content-center border-r-2" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={Beauty} alt="..." />
                 <h6 className="text-wrap text-center">Perawatan dan Kecantikan</h6>
             </div>
-            <div className="grid content-center border-b-2" style={{ width: 130, height: 160 }}>
+            <div className="grid content-center" style={{ width: 130, height: 160 }}>
                 <Image className="justify-self-center" src={Medicine} alt="..." />
                 <h6 className="text-wrap text-center">Kesehatan</h6>
             </div>

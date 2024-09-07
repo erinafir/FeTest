@@ -8,6 +8,8 @@ import Image from "next/image";
 import PayDay from "../../public/assets/paydaywebsite.png";
 import DiscountedCard from "@/components/DiscountedCard";
 import Link from "next/link";
+import ProductCard from "@/components/ProductCard";
+import ProductCardNoDiscount from "@/components/ProductCardNoDisc";
 
 export default function Home() {
   return (
@@ -57,6 +59,21 @@ export default function Home() {
         <DiscountedCard />
         <DiscountedCard />
         <DiscountedCard />
+      </div>
+      <h3 className="font-semibold mt-5">Rekomendasi untuk Kamu</h3>
+      <div className="grid grid-cols-2 sm:grid-cols-6 gap-3">
+        <ProductCardNoDiscount />
+        <ProductCard />
+        <ProductCard />
+        <ProductCardNoDiscount />
+        <ProductCard />
+        <ProductCard />
+        <ProductCardNoDiscount />
+        <ProductCard />
+        <ProductCard />
+        <ProductCardNoDiscount />
+        <ProductCardNoDiscount />
+        <ProductCard />
       </div>
     </section>
   );
